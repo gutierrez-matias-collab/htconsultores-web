@@ -32,13 +32,13 @@
                 <li><a href="#servicios" class="nav-link">Servicios</a></li>
                 <li><a href="#automatizacion" class="nav-link">Automatización</a></li>
                 <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                <li><a href="#reservas" class="nav-link">Reservas</a></li>
                 <li class="nav-mobile-only"><a href="https://portal.htconsultores.cl/" class="nav-link nav-link-acceso"
                         target="_blank">🔐 Acceso Clientes</a></li>
             </ul>
             <div class="nav-actions">
                 <a href="https://portal.htconsultores.cl/" class="btn-login" target="_blank">Acceso Clientes</a>
-                <a href="#contacto" class="btn-primary">Consulta Gratis</a>
+                <a href="#reservas" class="btn-primary">Agenda tu Hora</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span></span>
@@ -70,7 +70,7 @@
                     Ahorra tiempo, reduce errores y enfócate en hacer crecer tu negocio.
                 </p>
                 <div class="hero-cta">
-                    <a href="#contacto" class="btn-primary btn-large">
+                    <a href="#reservas" class="btn-primary btn-large">
                         <span>Agenda tu Consulta</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                             <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
@@ -310,8 +310,8 @@
                             y diseñaremos una solución a tu medida.
                         </p>
                         <div class="cta-buttons">
-                            <a href="#contacto" class="btn-primary btn-large">
-                                <span>Consulta Gratuita</span>
+                            <a href="#reservas" class="btn-primary btn-large">
+                                <span>Agenda una Hora</span>
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
                                     <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round" />
@@ -471,6 +471,22 @@
         </div>
     </section>
 
+    <!-- Reservas Section -->
+    <section class="contact" id="reservas" style="background: #f8fafc;">
+        <div class="container">
+            <div class="section-header" style="text-align:center; margin-bottom: 40px;">
+                <span class="section-badge">Agenda Online</span>
+                <h2 class="section-title">Agenda tu Hora con Nosotros</h2>
+                <p class="section-description">
+                    Reserva una consulta directamente en nuestra agenda online. Rápido, simple y sin llamadas.
+                </p>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <div id="ht-widget" data-tenant="ht-consultores" data-api-key="4f834a3e-320d-475f-93cf-2be45f186ef3"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section class="contact" id="contacto">
         <div class="container">
@@ -577,6 +593,7 @@
     </footer>
 
     <script src="main.js"></script>
+    <script src="https://reservas.htconsultores.cl/widget.js"></script>
 </body>
 
 </html>
